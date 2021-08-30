@@ -1,0 +1,35 @@
+<!doctype html>
+
+
+<html lang="en">
+
+<head>
+    <title>IPFS Gateway</title>
+    <link rel="icon" href="./images/www.codecademy.com.ico" type="image/x-icon">
+
+    <!-- External libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Local functions -->
+    <script src='./javascript/web3Bridge.js'></script>
+    <script src='./javascript/ajax.js'></script>
+</head>
+
+<body>
+    <h1>Welcome to your IPFS gateway</h1>
+    <p>Enter text you would like to save to IPFS into this box:</p>
+    <textarea name="input-text" id="input-text" cols="58" rows="5"></textarea>
+    <br/>
+    <button id="add-data" type="button" >Add text to IPFS</button>
+    <br/>
+    <p>Output from the IPFS node:</p>
+    <textarea placeholder="Awaiting message from IPFS node..." name="output-text" id="output-text" cols="58" rows="5" readonly=true ></textarea>
+    <br/>
+    <p>IPFS node request:</p>
+    <input placeholder="Enter CID here." type="text" id="ipfs-request" name="ipfs-request" size='50'>
+    <br>
+    <button id="get-data" type="button" >Get data from IPFS</button>
+
+</body>
+
+</html>

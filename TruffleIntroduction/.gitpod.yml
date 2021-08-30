@@ -1,0 +1,7 @@
+# Commands to start on workspace startup
+tasks:
+  - init: npm i -g
+
+# Ports to expose on workspace startup
+ports:
+  - port: 8545
